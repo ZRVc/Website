@@ -1,0 +1,1278 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ray Morocco</title>
+	<link rel="stylesheet" href="css/bookstyle.css">
+	<link rel="stylesheet" href="css/jquery.booklet.latest.css" type="text/css" media="screen, projection, tv">
+	<link rel="stylesheet" href="css/mediaelementplayer.css" type="text/css">
+	<link rel="stylesheet" href="css/jplayer.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css">
+
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic|IM+Fell+DW+Pica+SC|IM+Fell+Double+Pica:400,400italic|IM+Fell+Double+Pica+SC&display=swap" rel="stylesheet">
+	
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script> window.jQuery || document.write('<script src="js/booklet/jquery-2.1.0.min.js"><\/script>') </script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+
+<script src="js/booklet/jquery.easing.1.3.js"></script>
+<script src="js/booklet/jquery.booklet.latest.min.js"></script>
+	
+<script src="js/jquery.jplayer.min.js" ></script>
+	
+<script src="js/jquery.mCustomScrollbar.concat.min.js" ></script>
+	
+	
+
+
+	<script>$(function() {
+	//single book
+	$('#mybook').booklet({
+		width: "1084px",
+		height: "664px",
+		pagePadding: 0,
+		pageNumbers: false,
+		arrows: true,
+		closed: true,
+		covers:true
+	});
+});</script>
+	
+	<script>$(function() {
+	$('#custom-next').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("next");
+    });
+	});</script>
+	
+	<script>
+		$(function(){
+		    $('#2-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 2);
+    });
+		});
+		
+		$(function(){
+		    $('#4-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 4);
+    });
+		});
+		
+		$(function(){
+		    $('#6-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 6);
+    });
+		});
+		
+		$(function(){
+		    $('#8-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 8);
+    });
+		});
+		
+		$(function(){
+		    $('#10-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 10);
+    });
+		});
+		
+		$(function(){
+		    $('#11-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 11);
+    });
+		});
+		
+		
+		$(function(){
+		    $('#14-goto').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 14);
+    });
+		});
+		
+		$(function(){
+		    $('#ray-on-film-link').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 8);
+    });
+		});
+		
+		$(function(){
+		    $('#contact-me-link').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet("gotopage", 10);
+    });
+		});
+		
+	</script>
+	
+	<script>
+	$(function(){
+   $('#openCircus').click(function() {
+      $('#overlayCircus').fadeIn(300);
+   });
+
+   $('.close').click(function() {
+      $('#overlayCircus').fadeOut(300);
+	       $("#jquery_jplayer_1").jPlayer("stop");
+   });
+		
+		$(document).mouseup(function(e) {
+    var container = $('.poemPopup');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('#overlayCircus').fadeOut(300);
+		$("#jquery_jplayer_1").jPlayer("stop");
+    }
+});
+});
+		
+	$(function(){
+   $('#openLunas').click(function() {
+      $('#overlayLunas').fadeIn(300);
+   });
+
+   $('.close').click(function() {
+      $('#overlayLunas').fadeOut(300);
+	   		$("#jquery_jplayer_2").jPlayer("stop");
+
+   });
+		
+		$(document).mouseup(function(e) {
+    var container = $('.poemPopup');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('#overlayLunas').fadeOut(300);
+				$("#jquery_jplayer_2").jPlayer("stop");
+
+    }
+});
+});
+		
+	$(function(){
+   $('#openFiveParts').click(function() {
+      $('#overlayFiveParts').fadeIn(300);
+   });
+
+   $('.close').click(function() {
+      $('#overlayFiveParts').fadeOut(300);
+	   		$("#jquery_jplayer_3").jPlayer("stop");
+
+   });
+		
+
+	$(document).mouseup(function(e) 
+{
+    var container = $('.poemPopup');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('#overlayFiveParts').fadeOut(300);
+				$("#jquery_jplayer_3").jPlayer("stop");
+
+    }
+});
+});
+		
+	$(function(){
+   $('#openFreeSpirit').click(function() {
+      $('#overlayFreeSpirit').fadeIn(300);
+   });
+
+   $('.close').click(function() {
+      $('#overlayFreeSpirit').fadeOut(300);
+	   		$("#jquery_jplayer_4").jPlayer("stop");
+
+   });
+		
+
+	$(document).mouseup(function(e) 
+{
+    var container = $('.poemPopup');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('#overlayFreeSpirit').fadeOut(300);
+				$("#jquery_jplayer_4").jPlayer("stop");
+
+    }
+});
+});	
+		
+	$(function(){
+   $('#openTube').click(function() {
+      $('#overlayTube').fadeIn(300);
+   });
+
+   $('.close').click(function() {
+      $('#overlayTube').fadeOut(300);
+	   		$("#jquery_jplayer_5").jPlayer("stop");
+
+   });
+		
+
+	$(document).mouseup(function(e) 
+{
+    var container = $('.poemPopup');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('#overlayTube').fadeOut(300);
+				$("#jquery_jplayer_5").jPlayer("stop");
+
+    }
+});
+});	
+		
+	
+		
+	$(function(){
+   $('#open-blog-post-1').click(function() {
+      $('#overlay-blog-post-1').fadeIn(300);
+   });
+
+   $('.close').click(function() {
+      $('#overlay-blog-post-1').fadeOut(300);
+   });
+		
+		$(document).mouseup(function(e) {
+    var container = $('.blogPopup');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        $('#overlay-blog-post-1').fadeOut(300);
+    }
+});
+});
+		
+	</script>
+	
+	<script>
+	$('.mejs__player').mediaelementplayer({
+   features: ['playpause','progress','current','duration']
+});
+	});
+	</script>
+	
+	<script>
+$(function() {
+  // Bind Click event to the drop down navigation button
+  document.querySelector('.nav-button').addEventListener('click', function() {
+    /*  Toggle the CSS closed class which reduces the height of the UL thus 
+        hiding all LI apart from the first */
+   $('#contents-letters').classList.toggle('closed')
+  }, false);
+});
+		
+$(function() {
+  // Bind Click event to the drop down navigation button
+  document.querySelector('.nav-button').addEventListener('click', function() {
+    /*  Toggle the CSS closed class which reduces the height of the UL thus 
+        hiding all LI apart from the first */
+this.parentNode.parentNode.classList.toggle('closed')
+  }, false);
+});
+
+$(document).mouseup(function(e) 
+{
+    var container = $('.drop-down');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.addClass('closed');
+    }
+});
+		
+$(document).mouseup(function(e) 
+{
+    var container = $('.overlay');
+
+    // if the target of the click isn't the container nor a descendant of the container
+    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    {
+        container.addClass('closed');
+    }
+});
+		
+	</script>
+	
+			<script>
+	$(document).ready(function(){
+		$("#jquery_jplayer_1").jPlayer({
+			ready: function(event) {
+				$(this).jPlayer("setMedia", {
+					title: "Circus",
+					mp3: "audio/Ray_Lyrics_3.mp3",
+				});
+			},  cssSelectorAncestor: '#jp_container_1',
+					supplied: "mp3",
+			play: '.jp-play',
+			pause: '.jp-pause',
+				});
+			});
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#jquery_jplayer_2").jPlayer({
+			ready: function(event) {
+				$(this).jPlayer("setMedia", {
+					title: "Lunas",
+					m4a: "audio/Lunas_Lullaby_Cry.m4a",
+				});
+			},
+			 cssSelectorAncestor: '#jp_container_2',
+					supplied: "m4a",
+			play: '.jp-play',
+			pause: '.jp-pause',
+				});
+			});
+	</script>
+	
+
+	
+		<script>
+	$(document).ready(function(){
+		$("#jquery_jplayer_3").jPlayer({
+			ready: function(event) {
+				$(this).jPlayer("setMedia", {
+					title: "Five",
+					m4a: "audio/Five_Parts_to_the_Face.m4a",
+				});
+			},
+			 cssSelectorAncestor: '#jp_container_3',
+					supplied: "m4a",
+			play: '.jp-play',
+			pause: '.jp-pause',
+				});
+			});
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#jquery_jplayer_4").jPlayer({
+			ready: function(event) {
+				$(this).jPlayer("setMedia", {
+					title: "Free",
+					m4a: "audio/Free_Spirit_Girl.m4a",
+				});
+			},
+			 cssSelectorAncestor: '#jp_container_4',
+					supplied: "m4a",
+			play: '.jp-play',
+			pause: '.jp-pause',
+				});
+			});
+	</script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#jquery_jplayer_5").jPlayer({
+			ready: function(event) {
+				$(this).jPlayer("setMedia", {
+					title: "Tube",
+					m4a: "audio/The_Tube.m4a",
+				});
+			},
+			 cssSelectorAncestor: '#jp_container_5',
+					supplied: "m4a",
+			play: '.jp-play',
+			pause: '.jp-pause',
+				});
+			});
+	</script>
+	
+	
+	
+	
+	
+	<script>
+(function($){
+			$(window).on("load",function(){
+				
+				$(".poem").mCustomScrollbar({
+					
+				});
+				
+				});
+		})(jQuery);
+				
+				
+</script>
+	
+</head>
+
+<body>
+		<header>
+			<nav id= "menu">
+				<ul class="drop-down closed">
+				<li><a href="#" class="nav-button"><p id="contents-letters">Contents</p></a></li>
+				<li id="2-goto"><a href="#" class="non-nav">About the Author</a></li>
+				<li id="4-goto"><a href="#" class="non-nav">Oh! The Things I've Done!</a></li>
+				<li id="6-goto"><a href="#" class="non-nav">Pieces of Me — Writings</a></li>
+				<li id="8-goto"><a href="#" class="non-nav">Ray on Film — Videos</a></li>
+				<!--<li id="10-goto"><a href="#" class="non-nav">Blog</a></li>-->
+				<li id="10-goto"><a href="#" class="non-nav">Use Your Words, Talk to Me</a></li>
+				<li id="11-goto"><a href="#" class="non-nav">The Labour of My Fruits</a></li>
+<!--				<li id="14-goto"><a href="#" class="non-nav">Travel Through My Eyes</a></li>-->
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div id="mybook">
+				<!--Front Cover -->
+				<div id="front-cover">
+                </div>
+				<!--End Front Cover -->
+				<!--Back of Cover -->
+<!--
+				<div class="coverboard">
+                </div>
+-->
+			<!--End Back of Cover -->	
+			<!--First Page Contact? -->
+<!--
+				<div class="page-right">
+			    <div class="right-wrapper">
+					
+					</div>
+                </div>
+-->
+			<!--End First Page Contact? -->
+            <!--About the Author Page-->
+			<div class="page-left">
+			    <div class="left-wrapper">
+                    <figure><img id="author-image" src="images/AuthorImage.jpeg" alt=""
+					height="385px"></figure>
+					<div id="author-text">
+                    <h2>About the Author
+					</h2>
+                        <p><i>For the majority of my life I've been told I talk too much.<br>I've always been under the impression that it was a bad thing.<br>What I've realized though, is that my words are my power source.<br>They are my innermost paramount and ponderous feelings that come through from my heart, to my pen, to you.<br>And that, my loves, is not bad at all.</i></p>
+                    </div>
+                </div>
+				</div>
+			<div class="page-right">
+				<div class="right-wrapper">
+				<p>I am a blossoming young woman from a small town in Ontario but I assure you this life I live is not small.<br>This heart I love with is not small.<br>These dreams I have are far from small.<br>I was raised in a vibrant Italian world full of loud voices and expression and I've spent my life with my bare feet to the earth learning to quiet that exterior voice and find my interior dialogue.</p>
+				<p>Writing for me has always been my only outlet.<br>I've journaled for as long as I can remember and started to develop quite the vocabulary and knack for finding a way to pen-to-paper my feelings about the bewitching world surrounding me.<br>It was in 2018, whilst living in Tulum, Mexico; surrounded by prodigious musicians and astounding artists who pushed me to take my silent craft and turn it into a publishable art that I could use for work and pleasure.<br>It was then that I cultivated my first stand-point creative writing/slam poetry piece which would later be used in multiple collaborations with international DJs and win me 1<sup>st</sup> place in Vancouver's slam poetry finals.</p>
+				<p>I realized from the appreciation of my loved ones and the glimmer in the eyes of my listeners that this was something that I was meant to do. And so, I do.<br>And I will continue to do.<br>For myself. And for you.<br>Write with light.</p><p class="right-aligned">Forever and always,<br>Ray</p>
+			</div>
+				</div>
+            <!--end About the Author page-->
+			<!--Oh! The Things I've Done! page-->
+			<div class="page-left">
+				<div class="left-wrapper">
+                    <h2>Oh! The Things I’ve Done!
+					</h2>
+                        <p>This is a brief “resume” of prosperous opportunities my craft has led me to. I have worked widely with international artists and companies to conduct words for them to use for collaborative pieces and publicity outlets. This includes writing music and press releases for media outlets.</p>
+					<div class="separation-bar-wrapper">
+						<img class="separation-bar" src="images/line.svg" alt="">
+						</div>
+					<div class="resume-wrapper1">
+					<div class="resume-bullet"></div><span>Spoken word feature on a track with Jonathon Rosa<br>Written piece: “Ode to the Unquenchable”<br>SoundCloud: 
+						
+						<a id="ode-soundcloud-link" class= "link3" href="https://soundcloud.com/x_mirrors/staves-myth-ft-ray-morocco">Jonathon Rosa</a>
+						
+						<br>Links to Track: 
+						<a id="ode-apple-link" class= "link3" href="https://music.apple.com/tt/album/myth-feat-ray-morocco-single/1481568837">apple music</a>, 
+						
+						<a id="ode-amazon-link" class= "link3" href="https://www.amazon.com/Myth-Staves-feat-Ray-Morocco/dp/B07YGR3GCV/">amazon</a>, 
+						
+						<a id="ode-spotify-link" class= "link3" href="https://open.spotify.com/album/3HzGTvqIxV4d6zoHf1oXrm">spotify</a>
+						
+						<br></span>
+					<img id="staves-image" class="resume-image" src="images/Staves.jpg" alt="" height="250px">
+					</div>
+                </div>
+				</div>
+			<div class="page-right">
+				<div class="right-wrapper">
+					<div class="resume-wrapper1">
+					<div class="resume-bullet"></div><span class="resume-begin">Media Publicist for “The Zoo Project,” an event label in Ibiza, Spain with sister company, “The Nature Project.”</span>
+					<div id="zoo-wrapper">
+					<img id="zoo-image" src="images/zooproject.jpeg" alt="">
+					<p id="zoo-text">Tasks include: Constructing DJ biographies, press releases and local advertisements. Primarily handling getting print and online press for artists, placing longer pieces such as interviews and features, and pitching journalists on story ideas. This helps artists with big-picture career guidance, such as determining a compelling narrative offering an informed perspective to ensure their clients put their best foot forward.</p>
+					</div>
+					</div>
+					<div class="resume-wrapper">
+					<div class="resume-bullet"></div><span class="resume-begin">Spoken word performance at Hedoné LA, “Don't Cut the Flower” fundraiser for female genital mutilation in Africa. November 16, 2019.</span>
+					<div id="hedone-wrapper">
+					<img id="hedone-image" class="resume-image" src="images/Hedone.png" alt="">
+					<p id="hedone-text">The video is available in the  
+						
+						<a id="ray-on-film-link" class= "link4" href="#">Ray on Film</a>
+						
+						 section.
+						</p>
+					</div>
+					</div>
+			</div>
+				<div id="contact-me">
+					<p id="contact-me-text">Contact through
+						<a id="contact-me-link" class= "link4" href="#">Talk to Me</a>
+						 page for hire or collaboration opportunities
+						</p>
+				</div>
+			</div>
+            <!--end Oh! The Things I've Done! page-->
+			<!--Writings page-->
+			<div class="page-left">
+				<div class="left-wrapper">
+					<h2>Pieces of Me — Writings</h2>
+					<div id="poetry-verso">
+					<div class="poetry-top-row">
+                        <a id="openCircus" class="link2" href="#">
+                            <figure class="poem-thumb">
+                                <img src="images/CircusImage.jpeg" alt="" style width="175px">
+                                <figcaption>
+									1. <i>Circus of Life</i>
+                                </figcaption>
+							</figure></a>
+						<a id="openLunas" class="link2" href="#">
+								<figure class="poem-thumb">
+									<img src="images/LunasImage.jpeg" alt=""
+								height="175px">
+									<figcaption>
+										2. <i>Luna's Lullaby Cry</i>
+									</figcaption>
+								</figure></a> 
+					</div>
+						<div class="poetry-bottom-row">
+							<a id="openFiveParts" class="link2" href="#">
+                            <figure class="poem-thumb">
+                                <img src="images/FivePartsImage.jpg" alt=""
+								width="175px">
+                                <figcaption>
+									3. <i>Five Parts to the Face</i>
+                                </figcaption>          
+                            </figure></a>
+						<a id="openFreeSpirit" class="link2" href="#">
+                            <figure class="poem-thumb">
+                                <img src="images/FreeSpirit.jpeg" alt=""
+								height="150px">
+                                <figcaption>
+									4. <i>Free Spirit Girl</i>
+                                </figcaption>          
+                            </figure></a>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="page-right">
+				<div class="right-wrapper">
+					<div id="poetry-recto">
+						<div class="poetry-top-row">
+						<a id="openTube" class="link2" href="#">
+                            <figure class="poem-thumb">
+                                <img src="images/Tube.jpeg" alt=""
+								width="175px">
+                                <figcaption>
+									5. <i>Tube</i>
+                                </figcaption>          
+                            </figure></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end Writings page-->
+			<!--Ray on Film page-->
+			<div class="page-left">
+				<div class="left-wrapper">
+					<h2>Ray on Film — Videos</h2>
+					<div id="videos-left-page">
+					 <a class="link2" id= "openVideo1" href="https://youtu.be/Dj0cPniDhhE">
+                            <div class="video-thumb-wrapper">
+                                <img class="video-thumb-right" src="images/video1thumb.jpg" alt=""
+								height="152px">
+                                <p class="video-thumb-right-caption">
+                                    “Circus of Life” reading from the Vancouver Poetry Slam
+                                </p>          
+                            </div></a>
+					
+					 <a class="link2" id= "openVideo2" href="https://youtu.be/0b9QmLAPNiw">
+                            <div class="video-thumb-wrapper">
+                                <img class="video-thumb-right" src="images/video2thumb.jpg" alt=""
+								height="152px">
+                                <p class="video-thumb-right-caption">
+                                    Brand collaboration for Proper Dirty clothing. Filmed and produced by Sadat Photography.<br>IG: @properdirty @sadatr
+                                </p>          
+                            </div></a>
+						
+					 <a class="link2" id= "openVideo3" href="https://youtu.be/JUmsa7iwJr8">
+                            <div class="video-thumb-wrapper">
+                                <img class="video-thumb-right" src="images/video3thumb.jpg" alt=""
+								height="152px">
+                                <p class="video-thumb-right-caption">
+                                    The Hedoné performance of “Ode to Unquenchable.”
+                                </p>          
+                            </div></a>
+						
+				</div>
+				</div>
+			</div>
+			<div class="page-right">
+				<div class="right-wrapper">			                               
+			</div>
+			</div>
+			<!--end Ray on Film page-->
+			<!--Blog page-->
+			<!--<div class="page-left">
+				<div class="left-wrapper">
+					<h2>Blog</h2>
+					<table class="blog-table">
+						<tr>
+						 <td class="left"><a id="open-blog-post-1" class= "link3" href="#">Ray's Favourite Poets</a></td>
+        				 <td class="right"><i>Nov.</i> 25, 2019</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="page-right">
+				<div class="right-wrapper">
+					
+				</div>
+			</div>-->
+			<!--end Blog page-->
+				<div class="page-left">
+				<div class="left-wrapper">
+				
+				<div id= "frontispiece">
+                    <p class= "frontis1">USE YOUR WORDS,</p>
+					<p id="frontis2">talk to me</p>
+					<p class= "frontis3"><i>Anything you have to say, you have the right to say it, so say it to me here</i>:
+</p>
+					<div id="frontis-link-wrapper">
+					<a id="frontislink" class= "frontis1" href="mailto:moroccorachel@gmail.com">CLICK TO MESSAGE</a>
+						</div>
+					<p id= "frontis4">join my journey</p>
+					<p class= "frontis3"><i>I am journeying through the unknown, turning my craft into my source for everything in my life. With my pen and book in hand, I invite you to stay updated. Stay informed. Stay curious. And continue to join me to have my words somehow join you.</i>
+</p>
+					<p id= "frontis5"><br>“the pen is more powerful than the sword”</p>
+                    </div>
+					</div>
+					</div>
+				
+				<div class="page-right">
+				<div class="right-wrapper">
+					<h2>The Labour of My Fruits</h2>
+					<div id="fruits-wrapper">
+					<img id="fruits-image" src="images/BookCover.png" alt=""
+					height="336px"><p id="fruits-text">This is a book of poetic exploration; through rhymes that bring moments of wind-tousled hair and broken hearts. It is the liberation of wearing no bra under tight shirts. It is a piece of one's soul, in literary form. And it is illustrated sensationally.</p>
+					<p id="fruits-text2">
+					<i>A collection of some of my most cherished words put to print.</i><br><br>Available to hold in your hands with just the click of this button</p>
+					<div id="fruits_paypal_button">
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="NKEW9ALWNVZ82">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+						</div>
+						</div>
+					
+					<p><br>Thank you for choosing to support art and vulnerability, it means the world to us creators. 
+Be sure to read out loud to your lover, mother or self.</p>
+<p class="right-aligned">Love and Light,<br>Ray
+					</p>
+					
+					</div>
+					</div>
+			<!--Travel Page-->
+<!--
+				<div class="page-left">
+				<div class="left-wrapper">
+-->
+<!--
+					<h2>Travel Through My Eyes</h2>
+					<p>
+<i>To no one in particular,<br>
+Visions from my day<br>
+Turned to words from my soul<br>
+Spilled unto you.</i></p>
+
+					<p>Welcome. This is an option to lead a life of travel, straight from the comfort of your home.</p>
+<p>Have you ever fallen in love with the idea of a journey you have yet to take? I have. Even if just the steps I take to the closest sand to immerse in admiration of my surroundings.</p>
+<p>Within this time, I write. I write from the soul of a lover and the heart of an admirer and it you were to remove the writing from the backdrop it would be as if I was writing to a person of our dimension. But, with the page layered on top of the horizon you see that all the words were for our all giving Pacha Mama, beautiful Mother Earth.</p>
+<p>I ask you now, if you do not attain the opportunity to leave your job, or your fur babies, or your family, yet, you want to be in love with the land, then I can take that role for you. I will sit in a awe-striking place and write my heart out from you to Earth and I will mail straight to your home the journaled piece along with a photo of it held in front of my view just so the life I live, can be lived through you.</p>
+
+<p class="right-aligned">Take the Journey.<br>Love,<br>Ray
+					</p>
+-->				
+					
+					
+<!--
+				</div>
+			</div>
+-->
+				<!--Back of Cover -->
+<!--
+				<div class="coverboard">
+                </div>
+-->
+			<!--End Back of Cover -->	
+			<!--Rear Cover -->
+				<div id="rear-cover">
+                </div>
+			<!--End Rear Cover -->	
+				</div>
+		</main>
+	
+<!--The Poems-->
+	
+<!--Circus of Life Poem-->
+<div id="overlayCircus" class="overlay">
+         <div class="poemPopup">
+		   <div class="close">X</div>
+			 <div class="whole-poem-wrapper">
+			 <div class="poem-image-audio-wrapper">
+			 <img class="poem-image-fat" src="images/CircusImage.jpeg" alt="">
+				 <div id="circus-audio">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+					 <p class="player-titling">listen</p>
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-pause" role="button" tabindex="0">pause</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>			 
+	</div>
+				 </div>
+			 <div class="poem-wrapper-fat">
+			 <h3>Circus of Life</h3>
+			 <div class="poem content mCustomScrollbar">
+				 <div class="poem_outer_wrapper">
+					 <div class="poem_inner_wrapper">
+			 <p>Ladies and Gentlemen!<br>
+Boys and Girls!<br>
+Alpha and Omega!<br>
+Welcome.<br>
+To the greatest show on Earth!<br>
+This one called life.<br>
+This heckle and strife.<br>
+This universe of stardust,<br>
+Earth of majesty,<br>
+seat of Mars.<br>
+Some other Eden,<br>
+just some molecule planted among the stars.</p>
+<p>
+So, all you Adams with your apples<br>
+and Eves with your fruitful bearings.<br>
+With your proud hearts,<br>
+rebellious brows,<br>
+deaf ears,<br>
+and souls uncaring.<br>
+I’m airing this message to you.<br>
+It’s time for sharing.</p>
+<p>
+I have a secret.<br>
+Can you keep it?<br>
+Can you bury it with the roots?<br>
+The roots twisting into the ground under your<br>
+rotten<br>
+fallen<br>
+fruits.<br>
+Twisting into the core of our very existence,<br>
+for one instant<br>
+<span class="poem_SC1">listen.</span><br>
+You<br>
+are<br>
+<span class="poem_LC1">MAGIC!</span><br>
+You are a magical being<br>
+having a human experience.<br>
+Don’t lose your identity!<br>
+Every crosscut,<br>
+roadblock<br>
+and misdirection<br>
+is meant to be.<br></p>
+<p>
+Guided by the prophecies of a higher divination,<br>
+a power that overcomes every man-made creation.<br>
+But we often have this fixation,<br>
+to ease our self-deprivation,<br>
+a validation of sorts;<br>
+that the world lies in the palms of our hands.<br>
+But we’re wrong,<br>
+the lines on our palms are only mere things we barely understand.<br>
+Rivers flowing through the forests of our souls’ shadowlands.<br>
+Revealing our history<br>
+through deep grooves of all the things<br>
+we’re trying to reprimand.<br>
+Seeping into a contradiction of our future.<br>
+A future we need to mend!<br></p>
+<p>
+So use those hands!<br>
+To move mountains!<br>
+Shape valleys!<br>
+Castles of clay!<br>
+Empires of sand and glass! <br>
+Assemble! Rally!<br>
+Get off your ass!<br></p>
+<p>
+Because our bones only grow to stiffen.<br>
+And our hair turns to grey.<br>
+We don’t want our footprints<br>
+to be left in disarray.<br>
+We strive to outlast this life,<br>
+to quicken this walk to a run.<br>
+Having too many quarrels with God<br>
+to accept a salvation too easily won.</p>
+<p>
+So the secret is told.<br>
+Did you figure it out?</p>
+<p class="poem_centered_line">
+<span class="poem_LC1">COMMUNICATION<br>
+OF<br>
+CONSCIOUSNESS</span></p>
+<p>
+That’s what this life is about.<br></p>	
+				 </div>
+				 </div>
+			 </div>
+			 </div>
+	</div>
+	</div>
+	</div>
+<!--End Circus of Life Poem-->
+<!--Luna's Lullaby Cry Poem-->
+	
+<div id="overlayLunas" class="overlay">
+         <div class="poemPopup">
+		   <div class="close">X</div>
+			 <div class="whole-poem-wrapper">
+				  <div class="poem-image-audio-wrapper">
+			 <img class="poem-image-thin" src="images/LunasImage.jpeg" alt="">
+				<div id="lunas-audio">
+				 <div id="jquery_jplayer_2" class="jp-jplayer"></div>
+<div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
+					 <p class="player-titling">listen</p>
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-pause" role="button" tabindex="0">pause</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+				 
+				 </div>
+				 </div>
+			 <div class="poem-wrapper-thin">
+			 <h3>Luna's Lullaby Cry</h3>
+			 <div class="poem">
+				 	 <div class="poem_outer_wrapper">
+					 <div class="poem_inner_wrapper">
+			 <p>Last night,<br>
+I had a conversation with the moon.<br>
+She whispered of sacred dances,<br>
+the glimmering midnight breezes strewn.<br>
+She fondled with this persona of love,<br>
+looking down on her sister Earth,<br>
+basking her in silvery light,<br>
+guiding the tides to<span class="poem_SC1"> kiss</span> the shores<br>
+but never hold their grasp too tight.</p>
+<p>
+We moved together, her and I,<br>
+calling upon feelings existent from long ago.<br>
+Days where the trifles done with the setting sun<br>
+and worry washes in the coming snow.<br>
+Her ec<span class="poem_SC2">lips</span>e touched my ear.<br>
+Knowledge was gained through the mutters of her silent<br>
+shimmering<br>
+tears.</p>
+<p>
+She cried over the <i>ripping</i> of plants,<br>
+<i>smashing</i> of roots,<br>
+sacred medicines <i>torn</i> from the ground<br>
+<i>crushed</i> under colonial boots.<br>
+Tears in the form of crystallized light beams hit my shoulders,<br>
+mimicking an eruption of one thousand fallen soldiers.<br>
+With every death we’ve passed on<br>
+the information<br>
+of how to overcome it.</p>
+<p>
+<span class="poem_LC1">SHE</span><br>
+She has witnessed it all.<br>
+The<span class="poem_SC1"> unfolding</span> of time.<br>
+Watching us from above.<br>
+Waiting<br>
+watching<br>
+waiting<br>
+waiting<br>
+until we evolved from out of pantomime.<br>
+And as we did,<br>
+she did too.<br>
+Learning our language,<br>
+Us and Her<br>
+Son vs Moon.</p>
+<p>
+Combined<br>
+&emsp;intertwined<br>
+subtle shine<br>
+&emsp;deafening glow.<br>
+That setting ball of fire,<br>
+that phantom Northern snow.<br>
+And here I was, an inferior beast.<br>
+This burden to bear was too much<br>
+from this admirable feat.</p>
+<p>
+<i>And so I cried along.</i></p>
+<p>
+Thinking that the tears would disguise<br>
+the<br>
+<span class="poem_SC1">shame</span><br>
+and<br>
+<span class="poem_SC1">betrayal</span><br>
+that fell to place before my eyes.<br>
+From my people,<br>
+from our movements,<br>
+from our disrespect,<br>
+from this species<br>
+and the hatred<br>
+and the disconnected neglect.<br>
+But putting things into retrospect,<br>
+I sought out the <i>hope</i> of some<span class="poem_SC1"> future</span> effect<br>
+Where Love and Earth and Moon and Me<br>
+become one.<br>
+Become us.<br>
+Become he, she, we.</p>
+<p>
+And so,</p>
+<p>
+I let my tears fall to waves<br>
+that crashed upon the shore at my feet.<br>
+And as my footprints dissolved within my own self,</p>
+<p>
+so did my speech.
+</p>	
+			 </div>
+			 </div>	 
+			 </div>
+			 </div>
+			</div>
+	</div>
+      </div>
+<!--End Luna's Lullaby Cry Poem-->
+<!--Five Parts to the Face Poem-->
+<div id="overlayFiveParts" class="overlay">
+         <div class="poemPopup">
+		   <div class="close">X</div>
+			 <div class="whole-poem-wrapper">
+				  <div class="poem-image-audio-wrapper">
+			 <img class="poem-image-fat" src="images/FivePartsImage.jpg" alt="">
+				<div id="five-parts-audio">
+				 <div id="jquery_jplayer_3" class="jp-jplayer"></div>
+<div id="jp_container_3" class="jp-audio" role="application" aria-label="media player">
+					 <p class="player-titling">listen</p>
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-pause" role="button" tabindex="0">pause</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+				 </div>
+				 </div>
+			 <div class="poem-wrapper-fat">
+		     <h3>Five Parts to the Face</h3>
+			 <div class="poem">
+			 <p>1.<br>
+A hairline that recedes like the carribean sea<br>
+Against a less than milk chocolate forehead shore.<br>
+Falling stars of whisping baby hairs, learning to walk<br>
+blink and they’re gone,<br>
+grown-up.<br><br>
+
+2.<br>
+Eyes far apart enough that<br>
+a wire ending in tin cans can pass from window to window<br>
+so souls can speak.<br>
+Venom brown mixed with blades of grass<br>
+that melt into an eclipse all on their own<br><br>
+
+3.<br>
+A nose that slightly hooks at the end<br>
+to hang the worm<br>
+the early bird flies so fast for.<br>
+Just to bait<br>
+all your bullshit<br>
+that I can sniff out like a bloodhound.<br><br>
+
+4.<br>
+The parted pout of those two lips<br>
+open slowly<br>
+like two legs of your sleepy mistress when you remind her how much you love her.<br>
+And with those same lips,<br>
+she mouth the words back.<br><br>
+
+5.<br>
+Her chin is earthquake split down the middle,<br>
+which reminds her of her father.<br>
+One finger rests in the dimple<br>
+to lift her head up to its proper proud height.</p>	
+			 </div>
+			 </div>
+			</div>
+	</div>
+      </div>
+<!--End Five Parts to the Face Poem-->
+<!--Free Spirit Girl Poem-->
+<div id="overlayFreeSpirit" class="overlay">
+         <div class="poemPopup">
+		   <div class="close">X</div>
+			 <div class="whole-poem-wrapper">
+				  <div class="poem-image-audio-wrapper">
+			 <img class="poem-image-fat" src="images/FreeSpirit.jpeg" alt="">
+				<div id="free-spirit-audio">
+				 <div id="jquery_jplayer_4" class="jp-jplayer"></div>
+<div id="jp_container_4" class="jp-audio" role="application" aria-label="media player">
+					 <p class="player-titling">listen</p>
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-pause" role="button" tabindex="0">pause</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+				 </div>
+				 </div>
+			 <div class="poem-wrapper-fat">
+		     <h3>Free Spirit Girl</h3>
+			 <div class="poem">
+				 	 <div class="poem_outer_wrapper">
+					 <div class="poem_inner_wrapper">
+			 <p>They tell me,<br>
+“you’re such a free spirit.”<br>
+But<br>
+what happens when your spirit is too free?<br>
+When it’s too<span class="poem_SC1"> whimsical</span> to hold onto?<br>
+When they can’t keep it in their mouth<br>
+long enough to taste?<br>
+What happens when your<br>
+freedom<br>
+is your crusted dried rose,<br>
+hung up in the windowsill<br>
+for petty lovers to remember the blossom you used to be?<br>
+<span class="poem_LC2">WHAT HAPPENS TO THAT FREE?</span></p>
+<p>
+They tell me,<br>
+“you’re such a wild thing.”<br>
+But<br>
+what happens when they think your wild has been willed over their worth?<br>
+When you wild your way through that open range,<br>
+and leave them<span class="poem_SC1"> dusted</span> in their dependent path?<br>
+What happens to those<br>
+horned teeth savannah beasts,<br>
+hunted for the things that once brought an appreciated smile?<br>
+<span class="poem_LC2">WHAT HAPPENS TO THAT WILD?</span></p>
+<p>
+They tell me,<br>
+“you’re such an old soul.”<br>
+But<br>
+what happens when that old is too soulful?<br>
+When the dust layered on your record grooves<br>
+diminishes on their fingertips?<br>
+And your<span class="poem_SC1"> wrinkles</span> show in all their reflections.<br>
+What happens to that ancient knowledge<br>
+they don’t even know you possess?<br>
+Calligraphed on your life’s scroll.<br>
+<span class="poem_LC2">WHAT HAPPENS TO THAT OLD SOUL?</span><br></p>
+				 </div>
+			 </div>		 	 
+			 </div>
+			 </div>
+			</div>
+	</div>
+      </div>
+<!--End Five Parts to the Face Poem-->
+<!--Free Spirit Girl Poem-->
+<div id="overlayTube" class="overlay">
+         <div class="poemPopup">
+		   <div class="close">X</div>
+			 <div class="whole-poem-wrapper">
+				  <div class="poem-image-audio-wrapper">
+			 <img class="poem-image-fat" src="images/Tube.jpeg" alt="">
+				<div id="tube-audio">
+				 <div id="jquery_jplayer_5" class="jp-jplayer"></div>
+<div id="jp_container_5" class="jp-audio" role="application" aria-label="media player">
+					 <p class="player-titling">listen</p>
+	<div class="jp-type-single">
+		<div class="jp-gui jp-interface">
+			<div class="jp-controls">
+				<button class="jp-play" role="button" tabindex="0">play</button>
+				<button class="jp-pause" role="button" tabindex="0">pause</button>
+			</div>
+			<div class="jp-progress">
+				<div class="jp-seek-bar">
+					<div class="jp-play-bar"></div>
+				</div>
+			</div>
+			<div class="jp-time-holder">
+				<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+				<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+			</div>
+		</div>
+		<div class="jp-no-solution">
+			<span>Update Required</span>
+			To play the media you will need to either update your browser to a recent version or update your <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+		</div>
+	</div>
+</div>
+				 </div>
+				 </div>
+			 <div class="poem-wrapper-fat">
+		     <h3>Tube</h3>
+			 <div class="poem">
+			 <p>1.<br>
+My legs pace forward at a rate of slow comfort<br>
+Like breastfeeding from your mother<br>
+I am<br>
+in no rush, no hurry to life’s finish line<br>
+But the Walker bys are runnerbys<br>
+To their desks and their streetlights<br>
+Waiting in mild patience<br>
+Just to arrive at repetition<br>
+What fools must they be<br>
+to rush their moments<br>
+These precious 60 second jewels<br>
+Rare and exquisite<br>
+Hiding in bland grey stone that only hits you like a boulder<br>
+Only when it has become to late<br>
+It may be to late for them yet<br>
+Rapid rejection for memories they’ll soon forget<br>
+Trying to keep up with their frantic minds<br>
+But frantic is only frantic<br>
+when your running out of time<br><br>
+
+
+2.<br>
+Trains, planes and automobiles.<br>
+I’d take the fast lane straight to you my dear<br>
+Gum stuck to your underside,<br>
+Sticky goopy love, the kind that gets stuck in your hair<br>
+I’d have to cut out chunks to get you out.<br>
+I’d swallow you down my throat like a gulp of refreshing cola<br>
+Packed shoulder to shoulder, knees touching,<br>
+almost<br>
+Just almost<br>
+Inside of you.<br>
+Minding all your gaps<br>
+On the way<br>
+I would open you<br>
+up<br>
+Dripping out like shucking oysters<br>
+One final ride<br>
+One final taste</p>	
+			 </div>
+			 </div>
+			</div>
+	</div>
+      </div>
+<!--End Five Parts to the Face Poem-->
+	
+<div id="overlay-blog-post-1" class="overlay">
+         <div class="blogPopup">
+		   <div class="close">X</div>
+			 <div class="blog">
+			 <h4>Ray's Favourite Poets</h4>
+			 <h5>November 25, 2019</h5>
+			 <p>
+These are some inspirational poets of all eras and cultures who have led me to this authored life I choose to immerse in. Thank you to these individuals, and to the ones who are gone, may their souls rest on.</p>
+					<p>
+William Shakespeare (obviously)<br> 
+Robert Browning<br>
+Saul Williams<br>
+Taalam Acey<br>
+Shane Koyzan<br>
+Beau Sia<br>
+Oveous<br>
+Saadi<br>
+Hafez<br>
+Rumi</p>
+				 </div>
+	</div>
+	</div>
+			 
+			 
+</body>
+</html>
