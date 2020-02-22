@@ -1,0 +1,674 @@
+/* CSS Document */
+
+body{
+	font-family: "IM Fell DW Pica", "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 15px;
+    background-color: #202020;
+	padding-left: 65px;
+	padding-top:50px;
+	line-height: 1.2;
+}
+
+
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub { 
+  top: 0.4em; 
+}
+
+
+
+h2{
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	text-align: center;
+	color: #bc250c;
+	margin: 0;
+	height: 32px;
+	padding-top: 12px;
+}
+
+h3{
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	color: #bc250c;
+}
+
+h4{
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: left;
+	color: #bc250c;
+	margin-bottom:0;
+}
+
+h5{
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: left;
+	letter-spacing: 0.25em;
+	color: black;
+	margin-top:0;
+}
+
+/* Drop Down Styles
+================================ */
+nav .drop-down {
+  position: absolute;
+	top: -10px;
+	left: 15px;
+  list-style: none; 
+  overflow: hidden; /* When ul height is reduced, ensure overflowing li are not shown */
+  height: 287px; /*
+	172px = (38 (li) + 5 (li border)) * 4 (number of li) */
+  background-color: #202020;
+  width: 275px;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: height 0.3s ease;
+          transition: height 0.3s ease;
+	box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.5);
+	z-index:19;
+}
+
+nav .drop-down.closed {
+  /*  When toggled via jQuery this class will reduce the height of the ul which inconjuction
+      with overflow: hidden set on the ul will hide all list items apart from the first */
+  /* current li height 38px + 5px border */
+	height: 40px;
+	box-shadow:  none;
+}
+
+nav .drop-down.closed #contents-letters {
+	color:aliceblue;
+	opacity: 0.8;
+}
+
+nav .drop-down.closed #contents-letters:hover {
+	opacity: 1;
+}
+
+/*nav .drop-down li {
+  border-bottom: 1px solid #bc250c;
+}
+*/
+nav .drop-down li a {
+  display: block;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px; /* Larger touch target area */
+}
+
+nav .drop-down li a.non-nav:hover {
+	color: #bc250c;
+}
+
+nav .drop-down li:first-child a:after {
+  /*content: "\25BC";*/
+  float: right;
+  margin-left: -30px; /* Excessive -margin to bring link text back to center */
+  margin-right: 5px;
+}
+
+#contents-letters{
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 400;
+	font-size: 22px;
+	margin: 0;
+	color: aliceblue;
+}
+
+.page-left{
+	width: 542px;
+	height: 664px;
+	background-image: url("../images/LeftPage4.jpg");
+	background-size: cover;
+
+}
+
+.left-wrapper{
+	position: absolute;
+	top: 32px;
+	left: 50px;
+	width: 432px;
+	height: 578px;
+}
+
+.page-right{
+	width: 542px;
+	height: 664px;
+	background-image: url("../images/RightPage4.jpg");
+	background-size: cover;
+}
+
+.right-wrapper{
+	position: absolute;
+	top: 32px;
+	right: 50px;
+	width: 432px;
+	height: 578px;
+}
+
+
+.list2 li {
+    display: inline-block;
+	width: 45%;
+}
+
+a.link2 {
+	color: black;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+a.link2:hover {
+    color: #bc250c;
+	text-decoration: none
+}
+
+#front-cover{
+	width: 542px;
+	height: 664px;
+	background-image: url("../images/Cover4.jpg");
+	background-size: cover;
+
+}
+
+.coverboard{
+	width: 542px;
+	height: 664px;
+	background-image: url("../images/Canvas.jpg");
+	background-size: cover;
+
+}
+
+#rear-cover{
+	width: 542px;
+	height: 664px;
+	background-image: url("../images/RearCover3.jpg");
+	background-size: cover;
+
+}
+
+
+.overlay {
+   position: fixed;
+   height: 100%; 
+   width: 100%;
+   top: 0;
+   right: 0;  
+   bottom: 0;
+   left: 0;
+   background: rgba(0,0,0,0.8);
+   display: none;
+	z-index: 20;
+}
+
+.poemPopup {
+   width: 90%;
+   height: 600px;
+   padding: 20px;
+	margin:0;
+   position: absolute;
+   background-image: url("../images/Wrinkled3.jpg");
+	background-size: cover;
+	
+   top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index:21;
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+	font-size:40px;
+   color: #bc250c;
+}
+
+.whole-poem-wrapper {
+	display: flex;
+}
+
+.poem-image-audio-wrapper {
+	height: 565px;
+	margin: 25px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.player-titling{
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 0.35em;
+	margin: 1em 0 0 0;
+}
+
+.poem-image-fat {
+	min-width: 150px;
+	max-width: 100%;
+}
+
+.poem-image-fat.white {
+	border: 1.5px solid;
+}
+
+.poem-image-thin {
+	min-width: 150px;
+	max-width: 60%;
+	max-height: 80%;
+}
+
+.poem-image-fat.thin {
+	border: 1.5px solid;
+}
+
+.poem-wrapper-fat {
+	margin-left: 25px;
+	height: 600px;
+	flex: 1.2;
+}
+
+.poem-wrapper-thin {
+	margin-left: 20px;
+	height: 600px;
+	flex: 1.4;
+}
+
+.poem {
+	margin-top: -20px;
+	font-size: 20px;
+	width: 100%;
+	height: 24.7em;
+	overflow-y: hidden;
+}
+
+#frontispiece {
+	font-family: 'IM Fell Double Pica', serif;
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+}
+
+.frontis1 {
+	font-size: 27px;
+	color: #bc250c;
+	letter-spacing: 0.2em;
+	margin-bottom:0;
+}
+	
+#frontis2 {
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-size: 24px;
+	letter-spacing: 0.4em;
+	margin-bottom: 0;
+	margin-top:0.5em;
+}
+
+.frontis3 {
+	margin-top:0.8em;
+}
+
+#frontis-link-wrapper {
+	width: 90%;
+	margin: 0 auto;
+	padding-top:12px;
+	padding-bottom:12px;
+	border-top: solid;
+	border-bottom: solid;
+	border-width: 1px;
+}
+
+#frontislink {
+	text-decoration: none;
+}
+
+#frontis4 {
+	font-family: 'IM Fell Double Pica SC', serif;
+	font-size: 24px;
+	letter-spacing: 0.4em;
+	margin-bottom: 0;
+	margin-top:1em;
+	
+}
+
+#frontis5 {
+	font-family: 'IM Fell Double Pica SC', serif;
+	position: absolute;
+	margin: 0;
+	bottom: 0px;
+	width: 100%;
+}
+
+.zero-bottom-margin {
+	margin-bottom:0;
+}
+
+.right-aligned {
+	text-align: right;
+	margin: 0;
+}
+
+#author-image {
+	display: block;
+	margin: 0 auto;
+}
+
+#author-text {
+	height: 193px;
+}
+
+.blog-title {
+	letter-spacing: 0.25em;
+	margin-bottom: 0;
+}
+
+.blog-date {
+	font-family: "IM Fell DW Pica SC", serif;
+	letter-spacing: 0.25em;
+	margin-top: 0;
+}
+
+
+.poem-thumb {
+	margin-left: 0;
+	margin-right: 0px;
+	margin-top: 0;
+	margin-bottom: 2em;
+}
+
+#poetry-verso {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#poetry-recto {
+	margin-top: 52px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.poetry-top-row {
+	height: 267px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.poetry-bottom-row {
+	height: 267px;
+	display: flex;
+		align-items: center;
+	justify-content: space-around;
+}
+
+#videos-verso-page {
+	margin-top: 20px;
+	height: 534px;
+	overflow: hidden;
+}
+
+.video-thumb-right {
+	margin-left: 20px;
+	margin-bottom: 29px;
+	margin-top: 0;
+	float: right;
+}
+
+.video-thumb-left {
+	margin-right: 20px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+.video-thumb-right-caption {
+	text-align: right;
+	margin:0;
+}
+
+.video-thumb-wrapper{
+	clear:both;
+}
+
+h2 .placeholder-text {
+	color: rgba(0,0,0,0);
+}
+
+#zoo-wrapper{
+	clear:both;
+}
+
+#staves-image {
+	display: block;
+	margin: 1em auto 1em 0;
+}
+
+#contact-me {
+	position: absolute;
+	top: 610px;
+	right: 50px;
+}
+
+#contact-me-text {
+margin-top:0;
+}
+
+#zoo-image {
+	display: block;
+	float:left;
+	margin-right:20px;
+	height: 200px;
+}
+
+#hedone-image{
+	float: right;
+	height: 100%;
+	margin-left: 20px;
+	margin-top: 0;
+}
+
+#hedone-wrapper{
+	clear:both;
+	height: 180px;
+	margin-top: 1em;
+}
+
+.separation-bar-wrapper {
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.separation-bar {
+	height: 16px;
+}
+
+
+.resume-bullet {
+    height: 5px;
+    position: relative;
+    display: inline-block;
+    background: url("../images/bullet.svg");
+	background-repeat: no-repeat;
+	width: 7px;
+	margin-right: 7px;
+	padding-bottom: 4px;
+}
+
+.resume-wrapper1 {
+	margin-top: 1em;
+}
+
+.resume-wrapper {
+	margin-top: 2em;
+}
+
+a.link3 {
+	font-family: "IM Fell DW Pica SC";
+	letter-spacing: 0.1em;
+	color: black;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+a.link3:hover {
+    color: #bc250c;
+	text-decoration: none
+}
+
+a.link4 {
+	font-family: "IM Fell DW Pica SC";
+	color: black;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+a.link4:hover {
+    color: #bc250c;
+	text-decoration: none
+}
+
+.blog-table {
+	width: 100%;
+	margin: 0;
+}
+
+.blog-table .left {
+	text-align: left;
+	width: 80%;
+}
+
+.blog-table .right {
+	text-align: right;
+	width: 20%;
+}
+
+.blogPopup {
+   width: 90%;
+   height: 600px;
+   padding: 20px;
+	margin:0;
+   position: absolute;
+   background-image: url("../images/Wrinkled3.jpg");
+	background-size: cover;
+   top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index:21;
+}
+
+.blog {
+	font-size: 20px;
+	width: 50%;
+	margin-left: 30px;
+}
+
+#fruits-wrapper {
+	clear:both;
+}
+
+#fruits-image {
+	display: block;
+	float:left;
+	margin-right:20px;
+	height: 300px;
+	border: 1.5px solid;
+}
+
+#fruits-text2 {
+	text-align: center;
+}
+
+#fruits_paypal_button {
+	display: flex;
+	justify-content: space-around;
+}
+
+#fruits-wrapper::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#more-to-come {
+	height: 420px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.poem_SC1 {
+	font-family: "IM Fell DW Pica SC", serif;
+	letter-spacing: 0.15em;
+}
+
+.poem_SC2 {
+	font-family: "IM Fell DW Pica SC", serif;
+}
+
+.poem_LC1 {
+	letter-spacing: 0.15em;
+}
+
+.poem_LC2 {
+	letter-spacing: 0.15em;
+	display: block;
+	text-align: center;
+}
+
+.amperSC {
+	font-size: 10px;
+}
+
+.poem_centered_line {
+	text-align: center;
+}
+
+.poem_outer_wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.white-poem {
+border: 1.5px solid;
+}
+	
+#videos-recto-wrapper{
+	top: 81px;
+}
+
